@@ -1,0 +1,26 @@
+/* Position the button */
+.vjs-control.vjs-voice-button {
+    float: left;
+    line-height: 3em;
+    width: 9em;
+}
+
+.vjs-current-voice {
+    font-size: 1.1em;
+}
+
+.vjs-current-voice::before {
+    font-family: VideoJS;
+    content: '\e00c';
+    margin-right: 6px;
+}
+
+.vjs-voice-button:hover {
+    background: rgba(60, 60 , 60, 0.8) !important;
+}
+
+/* Must be written here! */
+.vjs-default-skin .vjs-voice-button .vjs-menu .vjs-menu-content {
+    left: -6.3em;
+    width: 18em;
+}

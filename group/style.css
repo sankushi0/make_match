@@ -1,0 +1,64 @@
+body {
+  background-color:#F2F2F2;
+}
+
+#chenge_num {
+  height: 40px;
+  border: 1px solid #333;
+  display: inline;
+}
+
+#mode {
+  font-size: 20px;
+  border: 1px solid #666;
+  width: 155px;
+  display: inline;
+}
+
+ul button {
+  padding: 10px;
+  margin: 5px;
+  display: inline;
+  background-color: #F4F5F7;
+  /* border: solid #4B9CFC; */
+  border: solid #333;
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+ul button:hover{
+  background-color: #d3d3d3;
+}
+
+ul button:active{
+  border: solid #ff69b4;
+}
+
+.btn, #btn1{
+  appearance: none;
+  border: 1px solid;
+  background: #F4F5F7;
+  color: #333;
+  padding: 2px 4px;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+
+.btn:hover, #btn1:hover{
+  background-color: #d3d3d3;
+}
+
+#show_pool1 {
+  width: 60px;
+  border: 1px solid #ff69b4;
+}
+
+#show_pool2 {
+  width: 60px;
+  /* border: 1px solid #ff69b4; */
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/*
+You are free to style the button however you wish. I plan to use
+an icon from my site's own icon font to make it more visible. These
+are just basic styles to make it look ok with plain text.
+*/
+
+/* Position the button */
+.vjs-control.vjs-res-button {
+    float: right;
+    line-height: 3em;
+    width: 4em !important;
+}
+
+.vjs-res-button .vjs-menu-content {
+    left: -4em !important;
+    width: 8em !important;
+    border-radius: 4px !important;
+}
+
+.vjs-res-button .vjs-current-res {
+    display: inline;
+    padding: 2px 5px 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.vjs-res-button .vjs-current-res:hover {
+    background: rgba(242, 242, 243, .5) !important;
+}
+
+.vjs-res-button .vjs-current-res.vjs-res-high {
+    color: #323136 !important;
+    background: #f2f2f3 !important;
+    /* border: 1px solid #79848c !important; */
+    /* text-shadow: 0 1px 0 #51595f !important; */
+}
+.vjs-res-button .vjs-current-res.vjs-res-low {
+    color: #323136 !important;
+    background: rgba(242, 242, 243, .3);
+    border: 1px solid #41484d;
+}
+
+/* Don't show hover effects on title */
+ul li.vjs-menu-title.vjs-res-menu-title:hover {
+    cursor: default;
+    background-color: transparent;
+    color: #CCC;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>group</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>全体 <span id="span2"></span></p>
+  <p>グループ数</p>
+  <form id="group_num"> <input type="radio" name="group_number" value="4" checked>4
+      <input type="radio" name="group_number" value="5">5
+      <input type="radio" name="group_number" value="6">6
+  </form>
+  <input type="number" id="number2" value="30" max="2000" />
+  <input type="button" value="確定" id="btn1" />
+    <button class="add btn">追加</button>
+    <button id="change" class="btn">メンバー変更</button>
+    <button id="girl" class="btn">女子</button>
+    <button id="noob" class="btn">初心者</button>
+    <button id="delete" class="btn">削除</button>
+    <button id="pool1_move" class="btn">プール1</button>
+    <button id="pool2_move" class="btn">プール2</button>
+    <button id="ex_btn" class="btn">予備</button>
+  <div class="">
+    <p>女子</p>
+    <input type="number" id="girl_num1" value="1">
+    <input type="number" id="girl_num2" value="2">
+    <input type="button" value="確定" id="girl_btn" class="btn">
+  </div>
+  <div class="">
+    <p id="mode">メンバー変更:</p><p id="chenge_num"></p>
+  </div>
+
+  <table>
+
+  <th>
+
+  <p>グループ1</p>
+  <ul id="member_list1">
+
+  </ul>
+    <button class="button1 btn">変更</button>
+  </th>
+  <th>
+  <p>グループ2</p>
+  <ul id="member_list2">
+
+  </ul>
+    <button class="button2 btn">変更</button>
+  </th>
+  <th>
+  <p id="group6">グループ3</p>
+  <ul id="member_list6">
+
+  </ul>
+    <button class="button6 btn">変更</button>
+  </th>
+</table>
+
+<table>
+  <th>
+  <p id="group3">グループ4</p>
+  <ul id="member_list4">
+
+  </ul>
+    <button class="button4 btn">変更</button>
+  </th>
+  <th>
+    <p id="group4">グループ5</p>
+    <ul id="member_list3">
+
+    </ul>
+      <button class="button3 btn">変更</button>
+  </th>
+  <th>
+    <p id= "group5">グループ6</p>
+    <ul id="member_list5">
+
+    </ul>
+      <button class="button5 btn">変更</button>
+  </th>
+</table>
+
+  <p id="show_pool1">プール1</p>
+  <ul id="pool1">
+
+  </ul>
+
+  <p id="show_pool2">プール2</p>
+  <ul id="pool2">
+
+  </ul>
+  <p id="show_ex">予備</p>
+  <ul id="ex_pool">
+
+  </ul>
+  <script src="main.js">
+
+  </script>
+</body>
+</html>

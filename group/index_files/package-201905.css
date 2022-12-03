@@ -1,0 +1,1829 @@
+html#page_id_lesson_package {
+  font-size: 13px; /* For using rem */
+}
+
+.package-hero-area {
+  background-color: #cbcace;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.package-toy-box-bg {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.package-theme-icon {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* pink */
+.package-theme-bgcolor-pink {
+  background-color: #fec8c8;
+}
+.package-toy-box-bg.package-toy-box-bg-pink {
+  background-color: #fec8c8;
+}
+
+/* orange */
+.package-theme-bgcolor-orange {
+  background-color: #ffdea3;
+}
+.package-toy-box-bg.package-toy-box-bg-orange {
+  background-color: #ffdea3;
+}
+
+/* lime */
+.package-theme-bgcolor-lime {
+  background-color: #d6f1a2;
+}
+.package-toy-box-bg.package-toy-box-bg-lime {
+  background-color: #d6f1a2;
+}
+
+/* green */
+.package-theme-bgcolor-green {
+  background-color: #bcf0bc;
+}
+.package-toy-box-bg.package-toy-box-bg-green {
+  background-color: #bcf0bc;
+}
+
+/* seagreen */
+.package-theme-bgcolor-seagreen {
+  background-color: #b2f0dc;
+}
+.package-toy-box-bg.package-toy-box-bg-seagreen {
+  background-color: #b2f0dc;
+}
+
+/* blue */
+.package-theme-bgcolor-blue {
+  background-color: #b0e0f8;
+}
+.package-toy-box-bg.package-toy-box-bg-blue {
+  background-color: #b0e0f8;
+}
+
+/* purple */
+.package-theme-bgcolor-purple {
+  background-color: #c1c1f6;
+}
+.package-toy-box-bg.package-toy-box-bg-purple {
+  background-color: #c1c1f6;
+}
+
+/* violet */
+.package-theme-bgcolor-violet {
+  background-color: #e2bcf5;
+}
+.package-toy-box-bg.package-toy-box-bg-violet {
+  background-color: #e2bcf5;
+}
+
+/* coral */
+.package-theme-bgcolor-coral {
+  background-color: #f5bce2;
+}
+.package-toy-box-bg.package-toy-box-bg-coral {
+  background-color: #f5bce2;
+}
+
+/* gray */
+.package-theme-bgcolor-gray {
+  background-color: #cbcace;
+}
+.package-toy-box-bg.package-toy-box-bg-gray {
+  background-color: #cbcace;
+}
+
+@media screen and (min-width: 1025px) {
+  .package-hero-layout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .package-hero-layout {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .package-hero-layout {
+    align-items: center;
+    display: flex;
+    height: 272px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .package-hero-layout {
+    padding-bottom: 32px;
+  }
+}
+
+.package-toy-box-layout {
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+  .package-toy-box-layout {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .package-toy-box-layout {
+    height: 256px;
+  }
+}
+
+.package-toy-box-layout-inner {
+  height: 48px;
+  left: 50%;
+  margin-left: -24px;
+  position: absolute;
+  width: 48px;
+}
+
+@media screen and (min-width: 1025px) {
+  .package-toy-box-layout-inner {
+    top: -48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .package-toy-box-layout-inner {
+    bottom: 128px;
+  }
+}
+
+.package-toy-box {
+  bottom: -48px;
+  left: 50%;
+  position: absolute;
+}
+
+.package-toy-box.outdated {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.package-box_outerParticles {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: lesson-box_particles;
+  background: url(/img/box/outer-particles.png) no-repeat center;
+  background-size: contain;
+  height: 240px;
+  margin-left: -480px;
+  margin-top: -160px;
+  opacity: 0;
+  position: absolute;
+  width: 960px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_outerParticles {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-box_innerParticles {
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: lesson-box_particles;
+  background: url(/img/box/inner-particles-d.png) no-repeat center;
+  background-size: contain;
+  height: 144px;
+  margin-left: -174px;
+  margin-top: -174px;
+  opacity: 0;
+  position: absolute;
+  width: 348px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_innerParticles {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-toy-box-layout.package-toy-box-layout-compact .package-box_innerParticles {
+  top: 30px;
+}
+
+.package-box_shadow {
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-name: lesson-box_shadow;
+  background: url(/img/box/box-shadow.png) no-repeat center;
+  background-size: contain;
+  height: 52px;
+  margin-left: -26px;
+  margin-top: -11px;
+  position: absolute;
+  width: 52px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_shadow {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-toy-box-cube {
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-name: lesson-toy-box-cube;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 52px;
+  margin-left: -26px;
+  margin-top: -26px;
+  position: absolute;
+  transform-origin: center bottom;
+  width: 52px;
+}
+
+.package-toy-box.toy-box-no-animation .package-toy-box-cube {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-box_glow {
+  animation-duration: 4s;
+  animation-name: lesson-box_glow;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  animation-fill-mode: forwards;
+  background: url(/img/box/glow.png) no-repeat center;
+  background-size: contain;
+  height: 128px;
+  margin-left: -64px;
+  margin-top: -64px;
+  position: absolute;
+  top: -90px;
+  width: 128px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_glow {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-toy-box-layout.package-toy-box-layout-compact .package-box_glow {
+  top: -60px;
+}
+
+.package-box_ldot {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  background-color: white;
+  border-radius: 100%;
+  margin-left: 50%;
+  margin-top: 50%;
+  position: absolute;
+}
+
+.package-box_ldot.package-box_ldot-0 {
+  animation-delay: 0.5s;
+  animation-name: lesson-box_ldot-0;
+  height: 8px;
+  width: 8px;
+}
+
+.package-box_ldot.package-box_ldot-1 {
+  animation-delay: 0.7s;
+  animation-name: lesson-box_ldot-1;
+  height: 5px;
+  width: 5px;
+}
+
+.package-box_ldot.package-box_ldot-2 {
+  animation-delay: 0.9s;
+  animation-name: lesson-box_ldot-2;
+  height: 5px;
+  width: 5px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_ldot {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-box_mainSymbol {
+  animation-duration: 4s;
+  animation-name: lesson-box_glow;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  animation-fill-mode: forwards;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: -90px;
+  width: 64px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_mainSymbol {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-toy-box-layout.package-toy-box-layout-compact .package-box_mainSymbol {
+  top: -60px;
+}
+
+.package-box_subSymbol {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  opacity: 0;
+  position: absolute;
+  width: 64px;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_subSymbol {
+  animation-delay: 0s;
+  animation-duration: 0s;
+}
+
+.package-toy-box .package-box_subSymbol.package-box_subSymbol-0 {
+  animation-delay: 0.2s;
+  animation-name: lesson-box_subSymbol-0;
+}
+
+.package-toy-box .package-box_subSymbol.package-box_subSymbol-1 {
+  animation-delay: 0.4s;
+  animation-name: lesson-box_subSymbol-1;
+}
+
+.package-toy-box .package-box_subSymbol.package-box_subSymbol-2 {
+  animation-name: lesson-box_subSymbol-2;
+}
+
+.package-toy-box.toy-box-no-animation .package-box_subSymbol.package-box_subSymbol-0,
+.package-toy-box.toy-box-no-animation .package-box_subSymbol.package-box_subSymbol-1,
+.package-toy-box.toy-box-no-animation .package-box_subSymbol.package-box_subSymbol-2 {
+  animation-delay: 0s;
+}
+
+/* boxes */
+
+.package-toy-box-cube.package-toy-box-cube-default-blue {
+  background-image: url(/img/box/boxes/default-blue.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-coral {
+  background-image: url(/img/box/boxes/default-coral.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-gray {
+  background-image: url(/img/box/boxes/default-gray.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-green {
+  background-image: url(/img/box/boxes/default-green.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-lime {
+  background-image: url(/img/box/boxes/default-lime.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-orange {
+  background-image: url(/img/box/boxes/default-orange.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-pink {
+  background-image: url(/img/box/boxes/default-pink.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-purple {
+  background-image: url(/img/box/boxes/default-purple.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-red {
+  background-image: url(/img/box/boxes/default-red.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-seagreen {
+  background-image: url(/img/box/boxes/default-seagreen.png);
+}
+.package-toy-box-cube.package-toy-box-cube-default-violet {
+  background-image: url(/img/box/boxes/default-violet.png);
+}
+
+/* main symbols (default) */
+
+.package-box_mainSymbol.package-box_mainSymbol-intersection-observer-orange {
+  background-image: url(/img/box/main-symbols/intersection-observer-orange.png?v=20210407);
+}
+.package-box_mainSymbol.package-box_mainSymbol-penguin-lime {
+  background-image: url(/img/box/main-symbols/penguin-lime.png?v=20210407);
+}
+.package-box_mainSymbol.package-box_mainSymbol-submarine-purple {
+  background-image: url(/img/box/main-symbols/submarine-purple.png?v=20210114);
+}
+.package-box_mainSymbol.package-box_mainSymbol-blender-blue {
+  background-image: url(/img/box/main-symbols/blender-blue.png?v=20201112);
+}
+.package-box_mainSymbol.package-box_mainSymbol-github-blue {
+  background-image: url(/img/box/main-symbols/github-blue.png?v=20201202);
+}
+.package-box_mainSymbol.package-box_mainSymbol-breakout-gray {
+  background-image: url(/img/box/main-symbols/breakout-gray.png?v=20201112);
+}
+.package-box_mainSymbol.package-box_mainSymbol-15puzzle-gray {
+  background-image: url(/img/box/main-symbols/15puzzle-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-3choice-coral {
+  background-image: url(/img/box/main-symbols/3choice-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-active-record-coral {
+  background-image: url(/img/box/main-symbols/active-record-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ada-green {
+  background-image: url(/img/box/main-symbols/ada-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-android-lime {
+  background-image: url(/img/box/main-symbols/android-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-angular-blue {
+  background-image: url(/img/box/main-symbols/angular-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ansible-gray {
+  background-image: url(/img/box/main-symbols/ansible-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-app-orange {
+  background-image: url(/img/box/main-symbols/app-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-arduino-seagreen {
+  background-image: url(/img/box/main-symbols/arduino-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-atom-gray {
+  background-image: url(/img/box/main-symbols/atom-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-awk-seagreen {
+  background-image: url(/img/box/main-symbols/awk-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-aws-purple {
+  background-image: url(/img/box/main-symbols/aws-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-backbonejs-gray {
+  background-image: url(/img/box/main-symbols/backbonejs-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-balloon-seagreen {
+  background-image: url(/img/box/main-symbols/balloon-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-barcode-gray {
+  background-image: url(/img/box/main-symbols/barcode-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-basic-pink {
+  background-image: url(/img/box/main-symbols/basic-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-bbs-purple {
+  background-image: url(/img/box/main-symbols/bbs-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-bear-lime {
+  background-image: url(/img/box/main-symbols/bear-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-bingo-coral {
+  background-image: url(/img/box/main-symbols/bingo-coral.png?v=2020709);
+}
+.package-box_mainSymbol.package-box_mainSymbol-bootstrap-violet {
+  background-image: url(/img/box/main-symbols/bootstrap-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-bot-purple {
+  background-image: url(/img/box/main-symbols/bot-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-brainfuck-blue {
+  background-image: url(/img/box/main-symbols/brainfuck-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-c-pink {
+  background-image: url(/img/box/main-symbols/c-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-c-sharp-violet {
+  background-image: url(/img/box/main-symbols/c-sharp-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-cake-pink {
+  background-image: url(/img/box/main-symbols/cake-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-calculator-blue {
+  background-image: url(/img/box/main-symbols/calculator-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-calendar-blue {
+  background-image: url(/img/box/main-symbols/calendar-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-canvas-coral {
+  background-image: url(/img/box/main-symbols/canvas-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-canvas-pink {
+  background-image: url(/img/box/main-symbols/canvas-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-carbon-lime {
+  background-image: url(/img/box/main-symbols/carbon-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-chart-js-pink {
+  background-image: url(/img/box/main-symbols/chart-js-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-charts-seagreen {
+  background-image: url(/img/box/main-symbols/charts-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-checker-gray {
+  background-image: url(/img/box/main-symbols/checker-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-chef-orange {
+  background-image: url(/img/box/main-symbols/chef-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-chrome-blue {
+  background-image: url(/img/box/main-symbols/chrome-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-chrome-gray {
+  background-image: url(/img/box/main-symbols/chrome-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-clock-orange {
+  background-image: url(/img/box/main-symbols/clock-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-cloud9-blue {
+  background-image: url(/img/box/main-symbols/cloud9-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-cobol-lime {
+  background-image: url(/img/box/main-symbols/cobol-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-coffeescript-orange {
+  background-image: url(/img/box/main-symbols/coffeescript-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-compass-gray {
+  background-image: url(/img/box/main-symbols/compass-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-contacts-violet {
+  background-image: url(/img/box/main-symbols/contacts-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-css-animation-violet {
+  background-image: url(/img/box/main-symbols/css-animation-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-css-blue {
+  background-image: url(/img/box/main-symbols/css-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-d3-gray {
+  background-image: url(/img/box/main-symbols/d3-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-datgui-coral {
+  background-image: url(/img/box/main-symbols/datgui-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-blue {
+  background-image: url(/img/box/main-symbols/default-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-coral {
+  background-image: url(/img/box/main-symbols/default-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-gray {
+  background-image: url(/img/box/main-symbols/default-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-green {
+  background-image: url(/img/box/main-symbols/default-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-lime {
+  background-image: url(/img/box/main-symbols/default-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-orange {
+  background-image: url(/img/box/main-symbols/default-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-pink {
+  background-image: url(/img/box/main-symbols/default-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-purple {
+  background-image: url(/img/box/main-symbols/default-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-seagreen {
+  background-image: url(/img/box/main-symbols/default-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-default-violet {
+  background-image: url(/img/box/main-symbols/default-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-developer-purple {
+  background-image: url(/img/box/main-symbols/developer-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-dice-pink {
+  background-image: url(/img/box/main-symbols/dice-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-docker-blue {
+  background-image: url(/img/box/main-symbols/docker-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-doubt-gray {
+  background-image: url(/img/box/main-symbols/doubt-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ecommerce-seagreen {
+  background-image: url(/img/box/main-symbols/ecommerce-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-electron-blue {
+  background-image: url(/img/box/main-symbols/electron-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-emacs-violet {
+  background-image: url(/img/box/main-symbols/emacs-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-emmet-lime {
+  background-image: url(/img/box/main-symbols/emmet-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-excel-green {
+  background-image: url(/img/box/main-symbols/excel-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-express-gray {
+  background-image: url(/img/box/main-symbols/express-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-firebase-orange {
+  background-image: url(/img/box/main-symbols/firebase-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-flashcards-lime {
+  background-image: url(/img/box/main-symbols/flashcards-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-flashcards-pink {
+  background-image: url(/img/box/main-symbols/flashcards-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-font-blue {
+  background-image: url(/img/box/main-symbols/font-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-fontawesome-blue {
+  background-image: url(/img/box/main-symbols/fontawesome-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-git-pink {
+  background-image: url(/img/box/main-symbols/git-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-go-blue {
+  background-image: url(/img/box/main-symbols/go-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-golf-green {
+  background-image: url(/img/box/main-symbols/golf-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-google-feed-orange {
+  background-image: url(/img/box/main-symbols/google-feed-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-google_url_green {
+  background-image: url(/img/box/main-symbols/google_url_green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-googleappsscript-blue {
+  background-image: url(/img/box/main-symbols/googleappsscript-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-grant-orange {
+  background-image: url(/img/box/main-symbols/grant-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-gulp-pink {
+  background-image: url(/img/box/main-symbols/gulp-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-hamburger-orange {
+  background-image: url(/img/box/main-symbols/hamburger-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-haml-pink {
+  background-image: url(/img/box/main-symbols/haml-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-heart-animation-pink {
+  background-image: url(/img/box/main-symbols/heart-animation-pink.png);
+}
+.package-box_mainSymbol.package-box_mainSymbol-heroku-violet {
+  background-image: url(/img/box/main-symbols/heroku-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-highlow-green {
+  background-image: url(/img/box/main-symbols/highlow-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-html-pink {
+  background-image: url(/img/box/main-symbols/html-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-imageboard-violet {
+  background-image: url(/img/box/main-symbols/imageboard-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-interactive-lime {
+  background-image: url(/img/box/main-symbols/interactive-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-internet-seagreen {
+  background-image: url(/img/box/main-symbols/internet-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ios-omikuji-blue {
+  background-image: url(/img/box/main-symbols/ios-omikuji-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ios-stopwatch-violet {
+  background-image: url(/img/box/main-symbols/ios-stopwatch-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-java-blue {
+  background-image: url(/img/box/main-symbols/java-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-jekyll-gray {
+  background-image: url(/img/box/main-symbols/jekyll-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-jq-lime {
+  background-image: url(/img/box/main-symbols/jq-lime.png?v=20200402);
+}
+.package-box_mainSymbol.package-box_mainSymbol-jquery-blue {
+  background-image: url(/img/box/main-symbols/jquery-blue.png?v=20200628);
+}
+.package-box_mainSymbol.package-box_mainSymbol-js-green {
+  background-image: url(/img/box/main-symbols/js-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-js-lime {
+  background-image: url(/img/box/main-symbols/js-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-js-speech-coral {
+  background-image: url(/img/box/main-symbols/js-speech-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-js-violet {
+  background-image: url(/img/box/main-symbols/js-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-just5-coral {
+  background-image: url(/img/box/main-symbols/just5-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-king-lime {
+  background-image: url(/img/box/main-symbols/king-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-kotlin-purple {
+  background-image: url(/img/box/main-symbols/kotlin-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-laravel-pink {
+  background-image: url(/img/box/main-symbols/laravel-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-less-purple {
+  background-image: url(/img/box/main-symbols/less-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-localdev-blue {
+  background-image: url(/img/box/main-symbols/localdev-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-localdev-coral {
+  background-image: url(/img/box/main-symbols/localdev-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-login-lime {
+  background-image: url(/img/box/main-symbols/login-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-lua-purple {
+  background-image: url(/img/box/main-symbols/lua-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-map-seagreen {
+  background-image: url(/img/box/main-symbols/map-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-markdown-purple {
+  background-image: url(/img/box/main-symbols/markdown-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-material-icon-seagreen {
+  background-image: url(/img/box/main-symbols/material-icon-seagreen.png);
+}
+.package-box_mainSymbol.package-box_mainSymbol-maze-blue {
+  background-image: url(/img/box/main-symbols/maze-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-memo-green {
+  background-image: url(/img/box/main-symbols/memo-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-modal-seagreen {
+  background-image: url(/img/box/main-symbols/modal-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-moment-js-seagreen {
+  background-image: url(/img/box/main-symbols/moment-js-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-mongo-green {
+  background-image: url(/img/box/main-symbols/mongo-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-more-green {
+  background-image: url(/img/box/main-symbols/more-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-mustache-lime {
+  background-image: url(/img/box/main-symbols/mustache-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-mysql-seagreen {
+  background-image: url(/img/box/main-symbols/mysql-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-nodejs-gray {
+  background-image: url(/img/box/main-symbols/nodejs-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-numbers-blue {
+  background-image: url(/img/box/main-symbols/numbers-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-omikuji-green {
+  background-image: url(/img/box/main-symbols/omikuji-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-omikuji-pink {
+  background-image: url(/img/box/main-symbols/omikuji-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-openscad-blue {
+  background-image: url(/img/box/main-symbols/openscad-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-p5-creative-violet {
+  background-image: url(/img/box/main-symbols/p5-creative-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-p5js-coral {
+  background-image: url(/img/box/main-symbols/p5js-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-pading-purple {
+  background-image: url(/img/box/main-symbols/pading-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-pagetop-orange {
+  background-image: url(/img/box/main-symbols/pagetop-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-paint-pink {
+  background-image: url(/img/box/main-symbols/paint-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-parallax-violet {
+  background-image: url(/img/box/main-symbols/parallax-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-pascal-orange {
+  background-image: url(/img/box/main-symbols/pascal-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-password-gray {
+  background-image: url(/img/box/main-symbols/password-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-perl-seagreen {
+  background-image: url(/img/box/main-symbols/perl-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-php-purple {
+  background-image: url(/img/box/main-symbols/php-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-pico8-pink {
+  background-image: url(/img/box/main-symbols/pico8-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-pingpong-blue {
+  background-image: url(/img/box/main-symbols/pingpong-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-postgresql-blue {
+  background-image: url(/img/box/main-symbols/postgresql-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-processing-purple {
+  background-image: url(/img/box/main-symbols/processing-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-python-orange {
+  background-image: url(/img/box/main-symbols/python-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-r-blue {
+  background-image: url(/img/box/main-symbols/r-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-rails-pink {
+  background-image: url(/img/box/main-symbols/rails-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-react-blue {
+  background-image: url(/img/box/main-symbols/react-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-redis-pink {
+  background-image: url(/img/box/main-symbols/redis-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-regexp-green {
+  background-image: url(/img/box/main-symbols/regexp-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-roading-pink {
+  background-image: url(/img/box/main-symbols/roading-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-rspec-pink {
+  background-image: url(/img/box/main-symbols/rspec-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-ruby_pink {
+  background-image: url(/img/box/main-symbols/ruby_pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sass-coral {
+  background-image: url(/img/box/main-symbols/sass-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-scala-pink {
+  background-image: url(/img/box/main-symbols/scala-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-scratch-orange {
+  background-image: url(/img/box/main-symbols/scratch-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-search-blue {
+  background-image: url(/img/box/main-symbols/search-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sed-violet {
+  background-image: url(/img/box/main-symbols/sed-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-setting-color-lime {
+  background-image: url(/img/box/main-symbols/setting-color-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-shellscript-purple {
+  background-image: url(/img/box/main-symbols/shellscript-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-shindan-coral {
+  background-image: url(/img/box/main-symbols/shindan-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-shooting-purple {
+  background-image: url(/img/box/main-symbols/shooting-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sinatrarb-lime {
+  background-image: url(/img/box/main-symbols/sinatrarb-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sketch-orange {
+  background-image: url(/img/box/main-symbols/sketch-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-slideshow-violet {
+  background-image: url(/img/box/main-symbols/slideshow-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-slot-pink {
+  background-image: url(/img/box/main-symbols/slot-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-smalltalk-blue {
+  background-image: url(/img/box/main-symbols/smalltalk-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-smartphone-seagreen {
+  background-image: url(/img/box/main-symbols/smartphone-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-socket-lime {
+  background-image: url(/img/box/main-symbols/socket-lime.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sonicpi-coral {
+  background-image: url(/img/box/main-symbols/sonicpi-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sqlite-orange {
+  background-image: url(/img/box/main-symbols/sqlite-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-stopwatch-blue {
+  background-image: url(/img/box/main-symbols/stopwatch-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-sublimetext-gray {
+  background-image: url(/img/box/main-symbols/sublimetext-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-svg-purple {
+  background-image: url(/img/box/main-symbols/svg-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-swift-gray {
+  background-image: url(/img/box/main-symbols/swift-gray.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-tablesort-violet {
+  background-image: url(/img/box/main-symbols/tablesort-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-tabmenu-violet {
+  background-image: url(/img/box/main-symbols/tabmenu-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-terminal-seagreen {
+  background-image: url(/img/box/main-symbols/terminal-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-textlint-coral {
+  background-image: url(/img/box/main-symbols/textlint-coral.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-three-js-pink {
+  background-image: url(/img/box/main-symbols/three-js-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-titanium-pink {
+  background-image: url(/img/box/main-symbols/titanium-pink.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-tmux-green {
+  background-image: url(/img/box/main-symbols/tmux-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-todo-violet {
+  background-image: url(/img/box/main-symbols/todo-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-treasure-violet {
+  background-image: url(/img/box/main-symbols/treasure-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-tweakpane-purple {
+  background-image: url(/img/box/main-symbols/tweakpane-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-typescript-blue {
+  background-image: url(/img/box/main-symbols/typescript-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-typing-orange {
+  background-image: url(/img/box/main-symbols/typing-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-underscore-blue {
+  background-image: url(/img/box/main-symbols/underscore-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-unity-violet {
+  background-image: url(/img/box/main-symbols/unity-violet.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-vagrant-blue {
+  background-image: url(/img/box/main-symbols/vagrant-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-vim-green {
+  background-image: url(/img/box/main-symbols/vim-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-vote-green {
+  background-image: url(/img/box/main-symbols/vote-green.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-vscode-purple {
+  background-image: url(/img/box/main-symbols/vscode-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-vue-seagreen {
+  background-image: url(/img/box/main-symbols/vue-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-webfonts-purple {
+  background-image: url(/img/box/main-symbols/webfonts-purple.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-webstorage-orange {
+  background-image: url(/img/box/main-symbols/webstorage-orange.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-wordpress-blue {
+  background-image: url(/img/box/main-symbols/wordpress-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-xcode-blue {
+  background-image: url(/img/box/main-symbols/xcode-blue.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-yaml-seagreen {
+  background-image: url(/img/box/main-symbols/yaml-seagreen.png?v=20200130);
+}
+.package-box_mainSymbol.package-box_mainSymbol-youtube-gray {
+  background-image: url(/img/box/main-symbols/youtube-gray.png?v=20200130);
+}
+
+/* sub symbols */
+
+.package-box_subSymbol.package-box_subSymbol-123 {
+  background-image: url(/img/box/sub-symbols/123.png);
+}
+.package-box_subSymbol.package-box_subSymbol-aa {
+  background-image: url(/img/box/sub-symbols/aa.png);
+}
+.package-box_subSymbol.package-box_subSymbol-amazon_aws {
+  background-image: url(/img/box/sub-symbols/amazon_aws.png);
+}
+.package-box_subSymbol.package-box_subSymbol-ampersand {
+  background-image: url(/img/box/sub-symbols/ampersand.png);
+}
+.package-box_subSymbol.package-box_subSymbol-android-studio {
+  background-image: url(/img/box/sub-symbols/android-studio.png);
+}
+.package-box_subSymbol.package-box_subSymbol-angle-brackets {
+  background-image: url(/img/box/sub-symbols/angle-brackets.png);
+}
+.package-box_subSymbol.package-box_subSymbol-angular {
+  background-image: url(/img/box/sub-symbols/angular.png);
+}
+.package-box_subSymbol.package-box_subSymbol-apple {
+  background-image: url(/img/box/sub-symbols/apple.png);
+}
+.package-box_subSymbol.package-box_subSymbol-asterisk {
+  background-image: url(/img/box/sub-symbols/asterisk.png);
+}
+.package-box_subSymbol.package-box_subSymbol-atom {
+  background-image: url(/img/box/sub-symbols/atom.png);
+}
+.package-box_subSymbol.package-box_subSymbol-braces {
+  background-image: url(/img/box/sub-symbols/braces.png);
+}
+.package-box_subSymbol.package-box_subSymbol-brain {
+  background-image: url(/img/box/sub-symbols/brain.png);
+}
+.package-box_subSymbol.package-box_subSymbol-browser {
+  background-image: url(/img/box/sub-symbols/browser.png);
+}
+.package-box_subSymbol.package-box_subSymbol-calendar {
+  background-image: url(/img/box/sub-symbols/calendar.png);
+}
+.package-box_subSymbol.package-box_subSymbol-camera-o {
+  background-image: url(/img/box/sub-symbols/camera-o.png);
+}
+.package-box_subSymbol.package-box_subSymbol-camera {
+  background-image: url(/img/box/sub-symbols/camera.png);
+}
+.package-box_subSymbol.package-box_subSymbol-child {
+  background-image: url(/img/box/sub-symbols/child.png);
+}
+.package-box_subSymbol.package-box_subSymbol-cloud {
+  background-image: url(/img/box/sub-symbols/cloud.png);
+}
+.package-box_subSymbol.package-box_subSymbol-cloud9 {
+  background-image: url(/img/box/sub-symbols/cloud9.png);
+}
+.package-box_subSymbol.package-box_subSymbol-colon {
+  background-image: url(/img/box/sub-symbols/colon.png);
+}
+.package-box_subSymbol.package-box_subSymbol-complete {
+  background-image: url(/img/box/sub-symbols/complete.png);
+}
+.package-box_subSymbol.package-box_subSymbol-csharp {
+  background-image: url(/img/box/sub-symbols/csharp.png);
+}
+.package-box_subSymbol.package-box_subSymbol-css-layout {
+  background-image: url(/img/box/sub-symbols/css-layout.png);
+}
+.package-box_subSymbol.package-box_subSymbol-css3 {
+  background-image: url(/img/box/sub-symbols/css3.png);
+}
+.package-box_subSymbol.package-box_subSymbol-cube {
+  background-image: url(/img/box/sub-symbols/cube.png);
+}
+.package-box_subSymbol.package-box_subSymbol-database {
+  background-image: url(/img/box/sub-symbols/database.png);
+}
+.package-box_subSymbol.package-box_subSymbol-dollar {
+  background-image: url(/img/box/sub-symbols/dollar.png);
+}
+.package-box_subSymbol.package-box_subSymbol-double-quotes {
+  background-image: url(/img/box/sub-symbols/double-quotes.png);
+}
+.package-box_subSymbol.package-box_subSymbol-droid {
+  background-image: url(/img/box/sub-symbols/droid.png);
+}
+.package-box_subSymbol.package-box_subSymbol-editor {
+  background-image: url(/img/box/sub-symbols/editor.png);
+}
+.package-box_subSymbol.package-box_subSymbol-equal {
+  background-image: url(/img/box/sub-symbols/equal.png);
+}
+.package-box_subSymbol.package-box_subSymbol-exclamation {
+  background-image: url(/img/box/sub-symbols/exclamation.png);
+}
+.package-box_subSymbol.package-box_subSymbol-facebook {
+  background-image: url(/img/box/sub-symbols/facebook.png);
+}
+.package-box_subSymbol.package-box_subSymbol-figures {
+  background-image: url(/img/box/sub-symbols/figures.png);
+}
+.package-box_subSymbol.package-box_subSymbol-firebase {
+  background-image: url(/img/box/sub-symbols/firebase.png);
+}
+.package-box_subSymbol.package-box_subSymbol-game-controller {
+  background-image: url(/img/box/sub-symbols/game-controller.png);
+}
+.package-box_subSymbol.package-box_subSymbol-gear {
+  background-image: url(/img/box/sub-symbols/gear.png);
+}
+.package-box_subSymbol.package-box_subSymbol-google {
+  background-image: url(/img/box/sub-symbols/google.png);
+}
+.package-box_subSymbol.package-box_subSymbol-graph {
+  background-image: url(/img/box/sub-symbols/graph.png);
+}
+.package-box_subSymbol.package-box_subSymbol-grid {
+  background-image: url(/img/box/sub-symbols/grid.png);
+}
+.package-box_subSymbol.package-box_subSymbol-html-tag {
+  background-image: url(/img/box/sub-symbols/html-tag.png);
+}
+.package-box_subSymbol.package-box_subSymbol-html5 {
+  background-image: url(/img/box/sub-symbols/html5.png);
+}
+.package-box_subSymbol.package-box_subSymbol-iOS-swfit {
+  background-image: url(/img/box/sub-symbols/iOS-swfit.png);
+}
+.package-box_subSymbol.package-box_subSymbol-instagram {
+  background-image: url(/img/box/sub-symbols/instagram.png);
+}
+.package-box_subSymbol.package-box_subSymbol-internet {
+  background-image: url(/img/box/sub-symbols/internet.png);
+}
+.package-box_subSymbol.package-box_subSymbol-jquery {
+  background-image: url(/img/box/sub-symbols/jquery.png);
+}
+.package-box_subSymbol.package-box_subSymbol-js {
+  background-image: url(/img/box/sub-symbols/js.png);
+}
+.package-box_subSymbol.package-box_subSymbol-laptop {
+  background-image: url(/img/box/sub-symbols/laptop.png);
+}
+.package-box_subSymbol.package-box_subSymbol-large-aa {
+  background-image: url(/img/box/sub-symbols/large-aa.png);
+}
+.package-box_subSymbol.package-box_subSymbol-layout {
+  background-image: url(/img/box/sub-symbols/layout.png);
+}
+.package-box_subSymbol.package-box_subSymbol-lock {
+  background-image: url(/img/box/sub-symbols/lock.png);
+}
+.package-box_subSymbol.package-box_subSymbol-mic {
+  background-image: url(/img/box/sub-symbols/mic.png);
+}
+.package-box_subSymbol.package-box_subSymbol-microsoft {
+  background-image: url(/img/box/sub-symbols/microsoft.png);
+}
+.package-box_subSymbol.package-box_subSymbol-music-note-8 {
+  background-image: url(/img/box/sub-symbols/music-note-8.png);
+}
+.package-box_subSymbol.package-box_subSymbol-music-note-88 {
+  background-image: url(/img/box/sub-symbols/music-note-88.png);
+}
+.package-box_subSymbol.package-box_subSymbol-niconico {
+  background-image: url(/img/box/sub-symbols/niconico.png);
+}
+.package-box_subSymbol.package-box_subSymbol-node-js {
+  background-image: url(/img/box/sub-symbols/node-js.png);
+}
+.package-box_subSymbol.package-box_subSymbol-novice {
+  background-image: url(/img/box/sub-symbols/novice.png);
+}
+.package-box_subSymbol.package-box_subSymbol-parentheses {
+  background-image: url(/img/box/sub-symbols/parentheses.png);
+}
+.package-box_subSymbol.package-box_subSymbol-percent {
+  background-image: url(/img/box/sub-symbols/percent.png);
+}
+.package-box_subSymbol.package-box_subSymbol-php {
+  background-image: url(/img/box/sub-symbols/php.png);
+}
+.package-box_subSymbol.package-box_subSymbol-plus-plus {
+  background-image: url(/img/box/sub-symbols/plus-plus.png);
+}
+.package-box_subSymbol.package-box_subSymbol-plus {
+  background-image: url(/img/box/sub-symbols/plus.png);
+}
+.package-box_subSymbol.package-box_subSymbol-pound {
+  background-image: url(/img/box/sub-symbols/pound.png);
+}
+.package-box_subSymbol.package-box_subSymbol-rails {
+  background-image: url(/img/box/sub-symbols/rails.png);
+}
+.package-box_subSymbol.package-box_subSymbol-react {
+  background-image: url(/img/box/sub-symbols/react.png);
+}
+.package-box_subSymbol.package-box_subSymbol-rectangular {
+  background-image: url(/img/box/sub-symbols/rectangular.png);
+}
+.package-box_subSymbol.package-box_subSymbol-robot {
+  background-image: url(/img/box/sub-symbols/robot.png);
+}
+.package-box_subSymbol.package-box_subSymbol-ruby {
+  background-image: url(/img/box/sub-symbols/ruby.png);
+}
+.package-box_subSymbol.package-box_subSymbol-sass {
+  background-image: url(/img/box/sub-symbols/sass.png);
+}
+.package-box_subSymbol.package-box_subSymbol-scratch-block {
+  background-image: url(/img/box/sub-symbols/scratch-block.png);
+}
+.package-box_subSymbol.package-box_subSymbol-semi-colon {
+  background-image: url(/img/box/sub-symbols/semi-colon.png);
+}
+.package-box_subSymbol.package-box_subSymbol-smartphone {
+  background-image: url(/img/box/sub-symbols/smartphone.png);
+}
+.package-box_subSymbol.package-box_subSymbol-spaceship {
+  background-image: url(/img/box/sub-symbols/spaceship.png);
+}
+.package-box_subSymbol.package-box_subSymbol-spring {
+  background-image: url(/img/box/sub-symbols/spring.png);
+}
+.package-box_subSymbol.package-box_subSymbol-square-brackets {
+  background-image: url(/img/box/sub-symbols/square-brackets.png);
+}
+.package-box_subSymbol.package-box_subSymbol-terminal {
+  background-image: url(/img/box/sub-symbols/terminal.png);
+}
+.package-box_subSymbol.package-box_subSymbol-titanium {
+  background-image: url(/img/box/sub-symbols/titanium.png);
+}
+.package-box_subSymbol.package-box_subSymbol-tools {
+  background-image: url(/img/box/sub-symbols/tools.png);
+}
+.package-box_subSymbol.package-box_subSymbol-touch {
+  background-image: url(/img/box/sub-symbols/touch.png);
+}
+.package-box_subSymbol.package-box_subSymbol-tree {
+  background-image: url(/img/box/sub-symbols/tree.png);
+}
+.package-box_subSymbol.package-box_subSymbol-tweakpane {
+  background-image: url(/img/box/sub-symbols/tweakpane.png);
+}
+.package-box_subSymbol.package-box_subSymbol-twitter {
+  background-image: url(/img/box/sub-symbols/twitter.png);
+}
+.package-box_subSymbol.package-box_subSymbol-unity {
+  background-image: url(/img/box/sub-symbols/unity.png);
+}
+.package-box_subSymbol.package-box_subSymbol-unix {
+  background-image: url(/img/box/sub-symbols/unix.png);
+}
+.package-box_subSymbol.package-box_subSymbol-vscode {
+  background-image: url(/img/box/sub-symbols/vscode.png);
+}
+.package-box_subSymbol.package-box_subSymbol-vue {
+  background-image: url(/img/box/sub-symbols/vue.png);
+}
+.package-box_subSymbol.package-box_subSymbol-walnus {
+  background-image: url(/img/box/sub-symbols/walnus.png);
+}
+.package-box_subSymbol.package-box_subSymbol-windows {
+  background-image: url(/img/box/sub-symbols/windows.png);
+}
+.package-box_subSymbol.package-box_subSymbol-xcode {
+  background-image: url(/img/box/sub-symbols/xcode.png);
+}
+
+@keyframes lesson-box_particles {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lesson-box_shadow {
+  0% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: scaleX(0.95);
+  }
+  70% {
+    opacity: 0.3;
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    transform: scaleX(0.95);
+  }
+  95% {
+    opacity: 1;
+    transform: scaleX(1.1);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes lesson-toy-box-cube {
+  0% {
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  30% {
+    transform: translateY(-8px) scaleX(0.95);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    transform: translateY(-8px) scaleX(0.95);
+  }
+  95% {
+    transform: scale(1.1, 0.9);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes lesson-box_glow {
+  0% {
+    opacity: 0;
+    transform: translateY(64px) scale(0.5) rotate(-20deg);
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes lesson-box_ldot-0 {
+  0% {
+    transform: rotate(160deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(160deg) translateX(50px);
+  }
+}
+
+@keyframes lesson-box_ldot-1 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-55deg) translateX(58px);
+  }
+}
+
+@keyframes lesson-box_ldot-2 {
+  0% {
+    transform: rotate(45deg);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(50deg) translateX(75px);
+  }
+}
+
+@keyframes lesson-box_subSymbol-0 {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px) rotate(90deg) scale(0.5);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translate(-100px, -90px) rotate(5deg);
+  }
+}
+
+@keyframes lesson-box_subSymbol-1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px) rotate(-90deg) scale(0.5);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translate(80px, -40px) rotate(10deg);
+  }
+}
+
+@keyframes lesson-box_subSymbol-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px) rotate(-90deg) scale(0.5);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translate(120px, -120px) rotate(-15deg);
+  }
+}
+
+.package-textLayout {
+  flex: 1;
+}
+
+.package-textInnerLayout {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  padding: 32px;
+  position: relative;
+}
+
+.package-intro-mini-cover .package-textInnerLayout {
+  padding: 16px;
+}
+
+.package-badgeLayout {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.package-info-title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.package-intro-mini-cover .package-info-title {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.package-info-description {
+  line-height: 1.7;
+  margin-top: 1em;
+  margin-bottom: 32px;
+}
+
+.package-intro-mini-cover .package-info-description {
+  line-height: inherit;
+  margin-bottom: 16px;
+}
+
+.pub-qa-about-lesson .package-intro-mini-cover .package-info-title {
+  margin-bottom: 16px;
+}
+
+.pub-qa-about-lesson .package-intro-mini-cover .package-info-description {
+  display: none;
+}
+
+.flat-progressBar {
+  align-items: center;
+  display: flex;
+}
+
+.flat-progressBar_outer {
+  background-color: #f2f2f3;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  flex: 1;
+  position: relative;
+}
+
+.flat-progressBar.flat-progressBar-large .flat-progressBar_outer {
+  height: 12px;
+}
+
+.flat-progressBar.flat-progressBar-normal .flat-progressBar_outer {
+  height: 8px;
+}
+
+.flat-progressBar.flat-progressBar-compact .flat-progressBar_outer {
+  border-radius: 2px;
+  height: 4px;
+}
+
+.flat-progressBar_inner {
+  background-color: #29a329;
+  border-radius: 6px;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  transition: .8s;
+}
+
+.flat-progressBar.flat-progressBar-compact .flat-progressBar_inner {
+  border-radius: 2px;
+}
+
+.flat-progressBar_text {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+.flat-progressBar_text.hide {
+  display: none;
+}
+
+.flat-progressBar_text.completed {
+  color: #29a329;
+}
+
+.package-intro-mini-cover .flat-progressBar_text {
+  display: none;
+}
+
+.flat-progressBar.flat-progressBar-compact .flat-progressBar_text {
+  display: none;
+}
+
+.package-premiumBadge {
+  background-color: #e69100;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 2px 4px 1px;
+}
+
+.package-premiumBadge_icon {
+  margin-right: 2px;
+}
+
+.package-page_noticeLayout .package-premiumBadge {
+    display: none;
+}
+
+.pub-qa-about-lesson .package-premiumBadge {
+    display: none;
+}
+
+/* notice */
+
+.package-page_noticeLayout {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+  .package-page_noticeLayout {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+}
+
+.package-pageNotice {
+  background-color: #f2f2f3;
+  border-radius: 2px;
+  color: #646369;
+  padding: 32px;
+}
+
+@media screen and (min-width: 1025px) {
+  .package-pageNotice {
+    display: flex;
+  }
+}
+
+.package-pageNotice.package-pageNotice-info {
+  background-color: #e6f7ff;
+  color: #08415e;
+}
+
+.package-pageNotice.package-pageNotice-warning {
+  background-color: #fff6e6;
+  color: #5e3f08;
+}
+
+.package-pageNotice.package-pageNotice-error {
+  background-color: #fbe9eb;
+  color: #4d1a1e;
+}
+
+.package-pageNotice_textLayout {
+  flex: 1;
+}
+
+.package-pageNotice_title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.package-pageNotice_titleIcon {
+  margin-right: 0.5em;
+}
+
+.package-pageNotice_detail {
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1025px) {
+  .package-pageNotice_intro-mini-cover-layout {
+    margin-left: 32px;
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .package-pageNotice_intro-mini-cover-layout {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    max-width: 320px;
+  }
+}
+
+.package-intro-mini-cover {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.package-intro-mini-cover-anchor {
+  display: block;
+}
+
+.package-intro-mini-cover-anchor, .package-intro-mini-cover-anchor:focus,
+.package-intro-mini-cover-anchor, .package-intro-mini-cover-anchor:hover {
+  color: #323135;
+  text-decoration: none;
+}
+
+.package-intro-mini-cover-imageLayout {
+  background-color: #cbcace;
+  height: 112px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pub-qa-about-lesson .package-intro-mini-cover-imageLayout {
+  height: 186px;
+}
+
+.package-intro-mini-cover-toy-box-layout {
+  left: 50%;
+  position: absolute;
+  top: 47%;
+  transform: scale(0.66);
+}
+
+.pub-qa-about-lesson .package-intro-mini-cover-toy-box-layout {
+  top: 58%;
+  transform: scale(0.8);
+}
+
+/* side */
+
+.side-clear-box {
+  margin-bottom: 32px;
+}
+
+.package-sideSection_title {
+  border-bottom: #cbcace solid 1px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 16px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+}
+
+/* gallery */
+
+.package-gallery-item {
+  background-color: #f2f2f3;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 8px;
+}
+
+.package-gallery-item + .package-gallery-item {
+  margin-top: 8px;
+}
+
+.package-gallery-item img {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#simple_lightbox_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.68);
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#simple_lightbox_mask.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 640px) {
+  #simple_lightbox_img {
+    max-width: 100vw;
+  }
+}

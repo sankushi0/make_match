@@ -1,0 +1,675 @@
+@media screen and (max-width: 1114px) {
+    html.style-version-3 .container.wide {
+        width: auto;
+    }
+
+    #page_id_index_index .container.wide {
+        width: auto;
+    }
+
+    #question_main {
+        width: auto;
+    }
+
+    #question_main .q-form {
+        width: auto;
+    }
+
+    #question_main .question-body {
+        width: auto;
+        word-wrap: anywhere;
+        overflow-wrap: anywhere;
+        word-break: break-all;
+    }
+
+    #question_main #new_question_body {
+        width: 100%;
+    }
+
+    #question_main .question-comment-body {
+        width: auto;
+        word-wrap: anywhere;
+        overflow-wrap: anywhere;
+        word-break: break-all;
+    }
+
+    .markdown-body pre,
+    .question-comment-body pre {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /*html.style-version-2, html.style-version-2 body {
+        width: auto;
+    }*/
+
+    #global_menu.is-member li:nth-child(4) {
+        display: none;
+    }
+
+    #global_dropdown_menu.is-member li.responsive:nth-child(4) {
+        display: block;
+    }
+
+    .container.wide {
+        width: auto;
+    }
+
+    .container.wide.no-responsive {
+        width: 1068px;
+    }
+
+    /*html.style-version-2 body .navbar,
+    html.style-version-2 body .navbar-inner {
+        width: auto;
+    }*/
+
+    .navbar .container.wide {
+        width: auto;
+    }
+
+    .navbar .container.wide.no-responsive {
+        width: 1068px;
+    }
+
+    .container.wide #topbar_search {
+        /*display: none;*/
+    }
+
+    .container.wide .show-narrowed {
+        display: block;
+    }
+
+    .wide-breadcrumb {
+        width: auto;
+    }
+
+    .wide-breadcrumb > ul {
+        width: auto;
+    }
+
+    .container.wide #main {
+        visibility: hidden;
+    }
+}
+
+/* For package renewal 2019-05 */
+@media screen and (max-width: 1024px) {
+    html.style-version-3, html.style-version-3 body {
+        width: auto;
+    }
+
+    #global_menu.is-guest li:nth-child(3) {
+        display: none;
+    }
+
+    #dropdown_of_login_btn {
+        display: block;
+    }
+
+    #global_dropdown_menu.is-guest li.responsive:nth-child(3) {
+        display: block;
+    }
+
+    html.style-version-3 .container.wide {
+        width: auto;
+    }
+
+    html.style-version-3 #package_main {
+        float: none;
+        width: auto;
+    }
+
+    html.style-version-3 .container.wide #sidebar {
+        float: none;
+        clear: both;
+        width: auto;
+    }
+
+    html.style-version-3 .prerequisite,
+    html.style-version-3 .next-recommend {
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    html.style-version-3 .prerequisite > .prerequisite-body,
+    html.style-version-3 .prerequisite.all-done.open > .prerequisite-body {
+        padding: 0;
+    }
+
+    html.style-version-3 .prerequisite > .prerequisite-body > p {
+        margin: 16px;
+    }
+
+    html.style-version-3 .prerequisite-boxes > .package-simple-info-box,
+    html.style-version-3 .next-recommend-boxes > .package-simple-info-box {
+        width: 100%;
+    }
+
+    html.style-version-3 .prerequisite-boxes > .package-simple-info-box:nth-child(2),
+    html.style-version-3 .next-recommend-boxes > .package-simple-info-box:nth-child(2) {
+        border-top: 1px solid #f2f2f3;
+    }
+
+    html.style-version-3 .prerequisite-boxes > .package-simple-info-box.dummy,
+    html.style-version-3 .next-recommend-boxes > .package-simple-info-box.dummy {
+        display: none;
+    }
+
+    html.style-version-3 .relax-sidebar {
+        margin-left: 20px;
+    }
+
+    html.style-version-3 .package-gallery {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    html.style-version-3 .package-gallery-item {
+        flex: 50%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    html.style-version-3 .package-gallery-item + .package-gallery-item {
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    #question_comment_submit .btn {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    html.style-version-2, html.style-version-2 body {
+        width: 986px;
+    }
+
+    #global_menu.is-member li:nth-child(3) {
+        display: none;
+    }
+
+    #global_dropdown_menu.is-member li.responsive:nth-child(3) {
+        display: block;
+    }
+
+    .container.wide {
+        width: 954px;
+    }
+
+    .container.wide.no-responsive {
+        width: 1068px;
+    }
+
+    .wide-breadcrumb > ul {
+        width: auto;
+    }
+
+    .container.wide #main {
+        width: 656px;
+    }
+
+    html#page_id_index_index, html#page_id_index_index body {
+        width: auto;
+    }
+
+    .top-hero-layout {
+        margin-bottom: 16px;
+    }
+
+    .top-hero-lead-layout {
+        width: auto;
+    }
+
+    .top-features > section {
+        padding: 16px 0;
+    }
+
+    .top-features > section:nth-of-type(even) {
+        background: #fff;
+    }
+
+    .top-features > section > .container {
+        display: block;
+        width: auto;
+        max-width: 458px;
+    }
+
+    .top-feature-text {
+        width: 100%;
+    }
+
+    .top-features > section:nth-of-type(odd) .top-feature-text {
+        margin: 0 auto;
+    }
+
+    .top-features > section:nth-of-type(even) .top-feature-text {
+        margin: 0 auto;
+    }
+
+    .top-feature-desc {
+        margin-bottom: 8px;
+    }
+
+    .top-feature-img {
+        display: none;
+     }
+
+    .top-feature-img-sp {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    /*
+    .top-feature-img {
+        position: absolute;
+        width: auto;
+        text-align: center;
+        bottom: 78px;
+        left: 0;
+        right: 0;
+    }
+    */
+
+    .popular-lessons .container,
+    .new-lessons .container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .top-packages {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .popular-lessons h2,
+    .new-lessons h2 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #footer {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer-inner-container {
+        display: block;
+    }
+
+    .footer-logo-contents {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #global_menu.is-guest li:nth-child(2) {
+        display: none;
+    }
+
+    #global_dropdown_menu.is-guest li.responsive:nth-child(2) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .container.wide.no-responsive #global_menu {
+        display: block;
+    }
+
+    #global_menu.is-member li:nth-child(2) {
+        display: none;
+    }
+
+    #global_dropdown_menu.is-member li.responsive:nth-child(2) {
+        display: block;
+    }
+
+    #why_revert {
+        right: 4px;
+    }
+
+    #why_revert_arrow {
+        left: 156px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #global_menu.is-member li:nth-child(1) {
+        display: none;
+    }
+
+    #global_menu.is-guest li:nth-child(1) {
+        display: none;
+    }
+
+    #global_dropdown_menu.is-guest li.responsive:nth-child(1) {
+        display: block;
+    }
+
+    .top-hero-container {
+        height: 588px;
+        background-image: none;
+    }
+
+    .top-hero-lead {
+        width: auto;
+        height: auto;
+        padding: 28px 0;
+    }
+
+    .top-service-message {
+        margin-top: 0;
+    }
+
+    .top-hero-sp-image {
+        width: auto;
+        max-width: 320px;
+        height: 332px;
+        margin: 0 auto;
+        background-image: url(/img/top_main_visual_sp_20200327.png?v=2);
+        background-size: cover;
+    }
+
+    .popular-lessons .container,
+    .new-lessons .container {
+        max-width: 458px;
+    }
+
+    .popular-lessons h2,
+    .new-lessons h2 {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .top-package-row {
+        width: 100%;
+    }
+
+    .top-package-row:nth-child(2) {
+        padding-top: 24px;
+        border-top: 1px solid #f2f2f3;
+    }
+
+    .call-to-action-layout .di-btn {
+        width: 100%;
+    }
+
+    .footer-links-contents {
+        display: block;
+    }
+
+    .footer-contents {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-contents + .footer-contents {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    html.style-version-2, html.style-version-2 body {
+        width: auto;
+    }
+
+    .container.wide {
+        width: auto;
+    }
+
+    .container.wide.no-responsive {
+        width: 1068px;
+    }
+
+    .container.wide .tab-content {
+        min-height: 0 !important;
+    }
+
+    .container.wide .span13 {
+        float: none;
+    }
+
+    .container.wide #sidebar {
+        float: none;
+        clear: both;
+        width: auto;
+    }
+
+    .container.wide #sidebar .responsive-box.hidden {
+        display: none;
+    }
+
+    .q-icon {
+        display: none;
+    }
+
+    .q-form {
+        float: none;
+    }
+
+    .q-form:before {
+        display: none;
+    }
+
+    .q-form:after {
+        display: none;
+    }
+
+    .q-bot {
+        margin-left: 0;
+    }
+
+    .pub-qa {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    .container.wide #sidebar.question-sidebar {
+        margin-top: 24px;
+        min-height: 0;
+    }
+
+    .pub-qa-main-container #sidebar.question-sidebar {
+        margin-left: 20px;
+        margin-bottom: 16px;
+    }
+
+    .pub-qa-about-lesson .package-textInnerLayout {
+        max-width: none;
+    }
+
+    .faq-side-new-btn {
+        margin-bottom: 32px;
+    }
+
+    html.style-version-3 .prerequisite,
+    html.style-version-3 .next-recommend {
+        width: auto;
+        max-width: 480px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #global_menu #topbar_search {
+        display: none;
+    }
+
+    html.style-version-3 #question_comment_body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.wide .nav-tabs > li > a {
+        padding-top: 8px;
+        padding-bottom: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container.wide #sidebar.question-sidebar {
+        margin-top: 24px;
+    }
+}
+
+/* iPhone XR - 414px */
+@media screen and (max-width: 414px) {
+    #topbar_inner_container h1,
+    #topbar_inner_container h1 a {
+        width: 140px;
+        margin-right: 0;
+    }
+
+    #topbar_inner_container h1 {
+        background-size: contain;
+        background-position: center;
+    }
+
+    #news_notification.guest-user {
+        display: none;
+    }
+
+    html.style-version-3 #lessons_list .responsive-flex {
+        display: flex;
+        position: relative;
+    }
+
+    html.style-version-3 #lessons_list .lessons-list-complete-btn {
+        position: absolute;
+        right: 0;
+    }
+
+    html.style-version-3 #lessons_list .lessons-list-complete-btn-placeholder {
+        min-width: 82px;
+    }
+
+    html.style-version-3 #lessons_list .lessons-list-icon {
+    }
+
+    html.style-version-3 #lessons_list .lesson_title {
+    }
+
+    html.style-version-3 #lessons_list .play-free-label {
+        position: absolute;
+        right: 0;
+        top: 36px;
+    }
+
+    html.style-version-3 #lessons_list .lesson-summaries {
+        margin: 8px 0 0 22px;
+        width: 100%;
+    }
+
+    html.style-version-3 .ls-bc-pn {
+        display: inline;
+    }
+
+    html.style-version-3 .pub-qa-section {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    html.style-version-3 .pub-qa-user {
+        flex: 0 0 32px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+
+    html.style-version-3 .pub-qa-user img {
+        width: 32px;
+        height: 32px;
+    }
+
+    html.style-version-3 .pub-qa-q {
+        margin-left: 0;
+    }
+
+    html.style-version-3 .pub-qa-answers {
+        margin-left: 0;
+    }
+
+    html.style-version-3 .q-title {
+        font-size: 16px;
+        padding-left: 48px;
+    }
+
+    html.style-version-3 .q-title .label {
+        left: 0;
+    }
+
+    html.style-version-3 .use-markdown-label {
+        margin: 0 0 8px 0;
+    }
+
+    .top-hero-layout,
+    .top-features,
+    .popular-lessons,
+    .new-lessons {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top-feature-img {
+        width: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .topbar-right-nav > .dropdown > .dropdown-toggle {
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+    }
+
+    #global_pulldown .topBarIcon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #global_pulldown .user-name {
+        display: none;
+    }
+
+    .prerequisite > header {
+        padding: 16px;
+    }
+
+    .prerequisite > header > h2 {
+        margin: 0 12px;
+    }
+
+    .package-simple-info-box .package-icon {
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .package-simple-info-box.all-done .package-icon::after {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+    }
+
+    .package-simple-info-box .package-detail-title .premium-label {
+        display: none;
+    }
+
+    .package-simple-info-box .last-components .premium-label {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .new-apple-notice-body > .icon {
+        display: none;
+    }
+}

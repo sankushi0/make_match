@@ -1,0 +1,209 @@
+/*
+ * size controler
+ *
+ * Copyright (c) 2014 Dotinstall.com
+ * Licensed under the MIT license.
+ */
+(function(window, videojs) {
+    'use strict';
+
+    var COOKIE_NAME = Dotinstall.cookie.PLAYER_SIZE_COOKIE_NAME;
+    var COOKIE_PATH = Dotinstall.cookie.PLAYER_SIZE_COOKIE_PATH;
+
+    var defaults = {
+        default_size: 'theater'
+    };
+
+    var ICON_LABEL_THEATER = 'シアター';
+    var ICON_LABEL_NORMAL  = '分割';
+    var ICON_LABEL_FULL    = '全画面';
+    var ICON_LABEL_PICTURE = 'ピクチャ';
+
+    var icons = [
+        { id: 'theater', label: ICON_LABEL_THEATER }
+    ];
+
+    var currentSizeId = 'theater';
+
+    var SizeController;
+    var sizeButton;
+    var video = document.querySelector('video');
+
+    if (video === null) {
+        return false;
+    }
+
+    if (Dotinstall.layout.isEditorAvailable()) {
+        icons.push({ id: 'normal',  label: ICON_LABEL_NORMAL });
+    }
+
+    if ('pictureInPictureEnabled' in document) {
+        icons.push({ id: 'pinp', label: ICON_LABEL_PICTURE });
+
+        video.addEventListener('leavepictureinpicture', function (event) {
+            var sizeId = Dotinstall.layout.isTheaterMode() ? 'theater' : 'normal';
+            setTheMenuItemSelected(sizeId);
+            updateButtonLabel(sizeId);
+        });
+    }
+
+    icons.push({ id: 'full', label: ICON_LABEL_FULL });
+
+    // P in P
+    function requestPictureInPicture() {
+        if (document.fullscreenElement) {
+            videojs.players.videojs_player.exitFullscreen();
+        }
+
+        document.querySelector('video').requestPictureInPicture();
+    }
+
+    function updateButtonLabel(id) {
+        var i;
+        var iconEl = document.querySelector('.vjs-current-size-icon');
+
+        for (i = 0; i < icons.length; i++) {
+            iconEl.classList.remove('vjs-size-icon-' + icons[i].id);
+
+            if (icons[i].id === id) {
+                document.querySelector('.vjs-current-size').textContent = icons[i].label;
+                iconEl.classList.add('vjs-size-icon-' + icons[i].id);
+            }
+        }
+    }
+
+    function setTheMenuItemSelected(id) {
+        var items = sizeButton.menu.children();
+        var i;
+
+        for (i = 0; i < items.length; i++) {
+            items[i].selected(items[i].options().size === id);
+        }
+    }
+
+    // plugin initializer
+    SizeController = function(options) {
+        var settings = videojs.util.mergeOptions(defaults, options)
+          , player = this
+          , SizeButton
+          , SizeMenuItem
+          , i;
+
+        // フルスクリーンに変更
+        function requestFullscreen() {
+            if (!player.isFullscreen()) {
+                player.requestFullscreen();
+            }
+        }
+
+        player.on('fullscreenchange', function() {
+            var sizeId;
+            if (document.fullscreenElement) {
+            } else {
+                Dotinstall.resize.setHandlerOffset();
+
+                sizeId = Dotinstall.layout.isTheaterMode() ? 'theater' : 'normal';
+
+                setTheMenuItemSelected(sizeId);
+                updateButtonLabel(sizeId);
+            }
+        });
+
+        SizeButton = videojs.MenuButton.extend({
+            init: function(player, options, ready) {
+                videojs.MenuButton.call(this, player, options, ready);
+            }
+        });
+
+        SizeButton.prototype.createItems = function() {
+            var items = []
+              , i;
+
+            for (i = 0; i < icons.length; i++) {
+                items.push(new SizeMenuItem(this.player, {
+                    el: videojs.Component.prototype.createEl('li', {
+                        className: 'vjs-size-item',
+                        innerHTML: [
+                            '<i class="vjs-size-icon vjs-size-icon-' + icons[i].id + '"></i>',
+                            icons[i].label
+                        ].join('')
+                    }),
+                    size: icons[i].id
+                }));
+
+                if (settings.default_size === icons[i].id) {
+                    items[i].selected(true);
+                }
+            }
+
+            return items;
+        };
+
+        // Item in menu
+        SizeMenuItem = videojs.MenuItem.extend({
+            init: function(player, options, ready) {
+                videojs.MenuItem.call(this, player, options, ready);
+
+                this.on(['click', 'tap'], function() {
+                    switch (options.size) {
+                        case 'normal':
+                            Dotinstall.layout.toNormalMode(true);
+                            this.selected(true);
+                            updateButtonLabel(options.size);
+                            break;
+                        case 'theater':
+                            Dotinstall.layout.toTheaterMode(true);
+                            this.selected(true);
+                            updateButtonLabel(options.size);
+                            break;
+                        case 'pinp':
+                            requestPictureInPicture();
+                            this.selected(true);
+                            updateButtonLabel(options.size);
+                            break;
+                        case 'full':
+                            requestFullscreen();
+                            this.selected(true);
+                            updateButtonLabel(options.size);
+                            break;
+                    }
+
+                    setTheMenuItemSelected(options.size);
+
+                    currentSizeId = options.size;
+
+                    if (sizeButton.menu.hasClass('vjs-lock-showing')) {
+                        sizeButton.menu.trigger('mouseout');
+                        sizeButton.trigger('click');
+                    }
+                    /*if (location.host === 'dotinstall.com' && typeof ga !== 'undefined') {
+                        // ToDo
+                        ga('send', 'event', 'Player', 'Click', 'size/');
+                    }*/
+                });
+            }
+        });
+
+        sizeButton = new SizeButton(player, {
+            'el': videojs.Component.prototype.createEl(null, {
+                className: 'vjs-size-control vjs-menu-button vjs-control',
+                innerHTML: [
+                    '<i class="vjs-current-size-icon vjs-size-icon vjs-size-icon-theater"></i>',
+                    '<span class="vjs-current-size">' + ICON_LABEL_THEATER + '</span>'
+                ].join('')
+            })
+        });
+
+        player.controlBar.addChild(sizeButton);
+
+        // the plugin functionality
+        player.Size = {
+            button: sizeButton,
+            cookie_name: COOKIE_NAME
+        };
+    };
+
+    // register the plugin with video.js
+    videojs.plugin('Size', SizeController);
+
+})(window, window.videojs);
